@@ -1,0 +1,483 @@
+{
+    "name": "purover",
+    "name_ru": "Пуровер / V60",
+    "cards": [
+        {
+            "title": "Универсальный",
+            "weight": 16,
+            "capacity": 250,
+            "time": "2:30",
+            "temperature": 94,
+            "author": "The Barn",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 35,
+                        "total" : 35
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "0:30",
+                        "weight" : 65,
+                        "total" : 100
+                    },
+                    {
+                        "time" : "1:00",
+                        "weight" : 50,
+                        "total" : 150
+                    },
+                    {
+                        "time" : "1:20",
+                        "weight" : 50,
+                        "total" : 200
+                    },
+                    {
+                        "time" : "1:45",
+                        "weight" : 50,
+                        "total" : 250
+                    }
+                ]
+            },
+            "note_link" : "https://thebarn.de/pages/brew-guide-v60"
+        },
+        {
+            "title": "Универсальный",
+            "weight": 22,
+            "capacity": 350,
+            "time": "2:30",
+            "temperature": 95,
+            "author": "Blue Bottle",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "infusion_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 60,
+                        "total" : 60
+                    },
+                    {
+                        "time" : "0:40",
+                        "weight" : 90,
+                        "total" : 150
+                    },
+                    {
+                        "time" : "1:25",
+                        "weight" : 100,
+                        "total" : 250
+                    },
+                    {
+                        "time" : "1:45",
+                        "weight" : 100,
+                        "total" : 350
+                    }
+                ],
+                "extraction_time" : "2:35-3:10"
+            },
+            "note_link" : "https://bluebottlecoffee.com/preparation-guides/pour-over"
+        },
+        {
+            "title": "Универсальный",
+            "weight": 22,
+            "capacity": 360,
+            "time": "2:30",
+            "temperature": 96,
+            "author": "Heart roasters",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 45,
+                        "total" : 45
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "0:20-1:50",
+                        "weight" : 315,
+                        "total" : 360
+                    }
+                ],
+                "extraction_time" : "2:20-2:30"
+            },
+            "note" : "После каждого вливания перемешайте ложкой или палочкой для размешивания. Это необходимо для того, чтобы весь кофе был равномерно насыщен.",
+            "note_link" : "https://www.heartroasters.com/pages/v60"
+        },
+        {
+            "title": "Универсальный",
+            "weight": 14.5,
+            "capacity": 210,
+            "time": "3:30",
+            "temperature": 96,
+            "author": "La Cabra",
+            "exist_icon": false,
+            "recipe" : {
+                "table" : true,
+                "infusion_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 60,
+                        "total" : 60
+                    },
+                    {
+                        "time" : "0:45",
+                        "weight" : 55,
+                        "total" : 115
+                    },
+                    {
+                        "time" : "1:30",
+                        "weight" : 55,
+                        "total" : 170
+                    },
+                    {
+                        "time" : "2:15",
+                        "weight" : 40,
+                        "total" : 210
+                    }
+                ],
+                "extraction_time" : "3:30"
+            },
+            "note_link" : "https://www.lacabra.dk/pages/v60-brew-guide"
+        },
+        {
+            "title": "Эфиопия натуральной обработки",
+            "weight": 20.5,
+            "capacity": 220,
+            "temperature": 85,
+            "author": "Locus",
+            "exist_icon": true,
+            "recipe" : {
+                "text" : true,
+                "preparation_stages" : [
+                    "Нагреть воду для чашек.",
+                    "Поставить чайник на 85 градусов.",
+                    "Заложить фильтр в воронку.",
+                    "Взвесить 20.5 г. кофе, смочить, смолоть на 6.5, убрать лишнее.",
+                    "Смочить фильтр 100 г. воды.",
+                    "Насыпать помол, залить 60 г. воды, интенсивно размешать вращением.",
+                    "Затем по 60 г. вливаем."
+                ]
+            }
+        },
+        {
+            "title": "Универсальный",
+            "weight": 10,
+            "capacity": 170,
+            "time": "1:30",
+            "temperature": 92,
+            "author": "Ninety Plus",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 30,
+                        "total" : 30
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "0:30",
+                        "weight" : 70,
+                        "total" : 100
+                    },
+                    {
+                        "time" : "1:15",
+                        "weight" : 70,
+                        "total" : 170
+                    }
+                ],
+                "extraction_time" : "1:30-2:00"
+            },
+            "note" : "Вода 60ppm. Помол: Сomandante 20-22."
+        },
+        {
+            "title": "Универсальный",
+            "weight": 10,
+            "capacity": 160,
+            "time": "1:50",
+            "temperature": 93,
+            "author": "Ninety Plus",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 25,
+                        "total" : 25
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "0:30",
+                        "weight" : 45,
+                        "total" : 70
+                    },
+                    {
+                        "time" : "0:50",
+                        "weight" : 45,
+                        "total" : 115
+                    },
+                    {
+                        "time" : "1:10",
+                        "weight" : 45,
+                        "total" : 160
+                    }
+                ],
+                "extraction_time" : "1:50-2:00"
+            }
+        },
+        {
+            "title": "Colombia El Paraíso",
+            "weight": 15,
+            "capacity": 260,
+            "time": "3:00",
+            "temperature": 96,
+            "author": "Nomad",
+            "exist_icon": false,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 50,
+                        "total" : 50
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "0:30",
+                        "weight" : 210,
+                        "total" : 260
+                    }
+                ],
+                "extraction_time" : "2:30-3:00"
+            },
+            "note" : "Вода: 93 ppm.",
+            "note_link" : "https://nomadcoffee.es/en/producto/red-plum/"
+        },
+        {
+            "title": "Универсальный",
+            "weight": 15,
+            "capacity": 250,
+            "time": "2:30",
+            "temperature": 97,
+            "barista": "Руслан Шульги",
+            "author": "Silky Drum",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 50,
+                        "total" : 50
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "0:25",
+                        "weight" : 50,
+                        "total" : 100
+                    },
+                    {
+                        "time" : "0:50",
+                        "weight" : 50,
+                        "total" : 150
+                    },
+                    {
+                        "time" : "1:15",
+                        "weight" : 50,
+                        "total" : 200
+                    },
+                    {
+                        "time" : "1:40",
+                        "weight" : 50,
+                        "total" : 250
+                    }
+                ]
+            },
+            "note_link" : "https://www.silkydrum.ru/recipes"
+        },
+        {
+            "title": "Кения (Гатомбойя)",
+            "weight": 17,
+            "capacity": 250,
+            "time": "2:50",
+            "temperature": 95,
+            "author": "Submarine",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 60,
+                        "total" : 60
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "0:30",
+                        "weight" : 60,
+                        "total" : 120
+                    },
+                    {
+                        "time" : "1:45",
+                        "weight" : 70,
+                        "total" : 190
+                    },
+                    {
+                        "time" : "2:15",
+                        "weight" : 60,
+                        "total" : 250
+                    }
+                ]
+            },
+            "note" : "Помол на Comandante: 23 клика. Помол на Timemore C2: 19 кликов. Помол на ЕК (turkish): 8,3.",
+            "note_link" : "https://rb.coffee/product-card/kenya_gatomboya"
+        },
+        {
+            "title": "Бразилия (Эль Дорадо катукай)",
+            "weight": 15.5,
+            "capacity": 250,
+            "time": "3:10",
+            "temperature": 95,
+            "author": "Submarine",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00-0:30",
+                        "weight" : 60,
+                        "total" : 60
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "1:10",
+                        "weight" : 70,
+                        "total" : 130
+                    },
+                    {
+                        "time" : "1:45",
+                        "weight" : 60,
+                        "total" : 190
+                    },
+                    {
+                        "time" : "2:15",
+                        "weight" : 60,
+                        "total" : 250
+                    }
+                ]
+            },
+            "note" : "Помол на Comandante: 23 клика. Помол на Timemore C2: 19 кликов. Помол на ЕК (turkish): 8,2.",
+            "note_link" : "https://rb.coffee/product-card/Brazil_El_Dorado_catucai"
+        },
+        {
+            "title": "Гватемала (Ла Сенда)",
+            "weight": 17,
+            "capacity": 260,
+            "time": "3:10",
+            "temperature": 95,
+            "author": "Submarine",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 40,
+                        "total" : 40
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "0:40",
+                        "weight" : 100,
+                        "total" : 140
+                    },
+                    {
+                        "time" : "1:30",
+                        "weight" : 60,
+                        "total" : 200
+                    },
+                    {
+                        "time" : "2:00",
+                        "weight" : 60,
+                        "total" : 260
+                    }
+                ]
+            },
+            "note" : "Помол на Comandante: 24 клика. Помол на Timemore C2: 21 клик. Помол на ЕК (turkish): 8,5.",
+            "note_link" : "https://rb.coffee/product-card/guatemala-la-senda"
+        },
+        {
+            "title": "Бурунди Бузирагухиндва (Бочки)",
+            "weight": 16.5,
+            "capacity": 250,
+            "time": "2:00",
+            "temperature": 95,
+            "author": "the Welder Catherine",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "infusion_stages" : [
+                    {
+                        "time" : "0:00-0:10",
+                        "weight" : 40,
+                        "total" : 40
+                    },
+                    {
+                        "time" : "0:25-1:15",
+                        "weight" : 210,
+                        "total" : 250
+                    }
+                ]
+            },
+            "note" : "Второе вливание стараемся растянуть до 1:15 - 1:20. Второе вливание разбито по этапам: Первый шаг - вливаем в центр поднимая кофейную шапку. Второй шаг - на 70 граммах начинаем делать круговые движения, чтобы потопить кофейную шапку. Важно не заходить на стенки воронки.",
+            "note_link" : "https://www.youtube.com/watch?v=-msoGbvpr7U"
+        },
+        {
+            "title": "Руанда Убумве Виски",
+            "weight": 17.5,
+            "capacity": 270,
+            "time": "2:45",
+            "temperature": 96,
+            "author": "the Welder Catherine",
+            "exist_icon": true,
+            "recipe" : {
+                "table" : true,
+                "prewetting_stages" : [
+                    {
+                        "time" : "0:00",
+                        "weight" : 50,
+                        "total" : 50
+                    },
+                    {
+                        "time" : "0:30",
+                        "weight" : 50,
+                        "total" : 100
+                    }
+                ],
+                "infusion_stages" : [
+                    {
+                        "time" : "1:00-1:40",
+                        "weight" : 170,
+                        "total" : 270
+                    }
+                ]
+            },
+            "note_link" : "https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/"
+        }
+    ]
+}
