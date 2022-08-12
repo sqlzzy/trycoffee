@@ -56,7 +56,6 @@
 
         computed: {
             authorNameWithoutSpaces() {
-                console.log(this.author)
                 return this.author.replace(/\s+/g, '');
             },
 
