@@ -21,7 +21,10 @@
       :ingredientsList="currentCard.recipe.ingredients_list"
       :extractionTime="currentCard.recipe.extraction_time"
     />
-
+    <note-coffee
+      :noteText="currentCard.note"
+      :noteLink="currentCard.note_link"
+    />
   </main>
   <footer-page />
 </template>
@@ -31,6 +34,7 @@ import HeaderPage from '@/components/HeaderPage.vue';
 import InfoCoffee from '@/components/InfoCoffee.vue';
 import FooterPage from '@/components/FooterPage.vue';
 import RecipeCoffee from '@/components/RecipeCoffee.vue';
+import NoteCoffee from '@/components/NoteCoffee.vue';
 
 export default {
   name: 'CardPage',
@@ -39,6 +43,7 @@ export default {
     InfoCoffee,
     RecipeCoffee,
     FooterPage,
+    NoteCoffee,
   },
 
   computed: {
