@@ -1,7 +1,7 @@
 {
     "rewrites":  [
         {"source": "/(.*)", "destination": "/"},
-        { "source": "/card/:methodName-:authorId-:idCoffee", "destination": "/card" },
-        { "source": "/method/:methodName", "destination": "/method" }
+        { "source": "/card/(.*)", "destination": "/card" },
+        { "source": "/method/(.*)", "destination": "/method" }
     ]
 }
