@@ -1,6 +1,9 @@
 {
+    "redirects": [
+        { "source": "/card/:methodName-:authorId-:idCoffee", "destination": "/card.html" },
+        { "source": "/method/:methodName", "destination": "/method.html" }
+    ],
     "rewrites":  [
-        {"source": "/(.*)", "destination": "/"},
         { "source": "/card/(.*)", "destination": "/card" },
         { "source": "/method/(.*)", "destination": "/method" }
     ]
