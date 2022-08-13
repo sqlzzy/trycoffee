@@ -1,5 +1,5 @@
 {
-    "rewrites": [
+    "redirects": [
       { "source": "/card/:methodName-:authorId-:idCoffee", "destination": "/card.html" },
       { "source": "/method/:methodName", "destination": "/method.html" }
     ]
