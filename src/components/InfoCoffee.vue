@@ -57,12 +57,10 @@
 
         computed: {
             authorNameWithoutSpaces() {
-                console.log(this.author)
                 return this.author.replace(/\s+/g, '');
             },
 
             authorNameInLowerCase() {
-                console.log(this.authorNameWithoutSpaces);
                 return this.authorNameWithoutSpaces.toLowerCase();
             },
 
