@@ -1,7 +1,6 @@
 {
     "rewrites": [
       { "source": "/card/:methodName-:authorId-:idCoffee", "destination": "/card.html" },
-      { "source": "/method/:methodName", "destination": "/method.html" },
-      { "source": "/**", "destination": "/index.html" }
+      { "source": "/method/:methodName", "destination": "/method.html" }
     ]
   }
