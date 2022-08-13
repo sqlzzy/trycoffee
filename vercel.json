@@ -1,5 +1,7 @@
 {
     "rewrites":  [
-        {"source": "/(.*)", "destination": "/"}
+        {"source": "/(.*)", "destination": "/"},
+        { "source": "/card/:methodName-:authorId-:idCoffee", "destination": "/card" },
+        { "source": "/method/:methodName", "destination": "/method" }
     ]
 }
