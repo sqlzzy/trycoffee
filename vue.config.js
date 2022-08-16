@@ -9,19 +9,28 @@ module.exports = defineConfig({
     'index': {
       entry: './src/pages/Home/index.js',
       template: './src/pages/Home/index.html',
-      title: 'Home',
+      title: 'Главная',
+      meta: {
+        description: 'Главная страница TRY COFFEE'
+      },
       chunks: [ 'chunk-vendors', 'chunk-common', 'index' ]
     },
     'card': {
       entry: './src/pages/CardPage/index.js',
       template: './src/pages/CardPage/index.html',
-      title: 'Card',
+      title: 'Рецепт',
+      meta: {
+        description: 'Страница рецепта приготовления кофе'
+      },
       chunks: [ 'chunk-vendors', 'chunk-common', 'card' ]
     },
     'method': {
       entry: './src/pages/MethodPage/index.js',
       template: './src/pages/MethodPage/index.html',
-      title: 'Method',
+      title: 'Метод',
+      meta: {
+        description: 'Страница метода приготовления кофе'
+      },
       chunks: [ 'chunk-vendors', 'chunk-common', 'method' ]
     }
   },
