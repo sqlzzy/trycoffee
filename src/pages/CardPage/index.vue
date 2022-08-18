@@ -33,7 +33,7 @@
 import HeaderPage from '@/components/header-page/HeaderPage.vue';
 import InfoCoffee from '@/components/info-coffee/InfoCoffee.vue';
 import FooterPage from '@/components/footer-page/FooterPage.vue';
-import RecipeCoffee from '@/components/RecipeCoffee.vue';
+import RecipeCoffee from '@/components/recipe-coffee/RecipeCoffee.vue';
 import NoteCoffee from '@/components/note-coffee/NoteCoffee.vue';
 
 export default {
