@@ -16,7 +16,6 @@ module.exports = defineConfig({
       base: process.env.NODE_ENV === 'production'
           ? 'https://www.trycoffee.info/'
           : '/',
-      favicon: 'public/favicon.ico',
       chunks: [ 'chunk-vendors', 'chunk-common', 'index' ]
     },
     'card': {
@@ -29,7 +28,6 @@ module.exports = defineConfig({
       base: process.env.NODE_ENV === 'production'
           ? 'https://www.trycoffee.info/'
           : '/',
-      favicon: 'public/favicon.ico',
       chunks: [ 'chunk-vendors', 'chunk-common', 'card' ]
     },
     'method': {
@@ -42,7 +40,6 @@ module.exports = defineConfig({
       base: process.env.NODE_ENV === 'production'
           ? 'https://www.trycoffee.info/'
           : '/',
-      favicon: 'public/favicon.ico',
       chunks: [ 'chunk-vendors', 'chunk-common', 'method' ]
     }
   },
