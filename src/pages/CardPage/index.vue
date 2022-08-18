@@ -32,7 +32,7 @@
 <script>
 import HeaderPage from '@/components/HeaderPage.vue';
 import InfoCoffee from '@/components/InfoCoffee.vue';
-import FooterPage from '@/components/FooterPage.vue';
+import FooterPage from '@/components/footer-page/FooterPage.vue';
 import RecipeCoffee from '@/components/RecipeCoffee.vue';
 import NoteCoffee from '@/components/note-coffee/NoteCoffee.vue';
 
