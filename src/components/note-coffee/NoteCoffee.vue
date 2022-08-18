@@ -22,7 +22,7 @@
     </section>
 </template>
 
-<script>
+<script> 
     export default {
         name: 'NoteCoffee',
 
@@ -33,26 +33,4 @@
     };
 </script>
 
-<style lang="less" scoped>
-.note-coffee {
-    width: calc(100% - 25px);
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #00000505;
-
-    &__title {
-        font-size: x-large;
-        font-weight: bold;
-        margin: 0 0 18px;
-    }
-
-    &__text {
-        margin-bottom: 36px;
-    }
-
-    &__link {
-        color: #0000FF;
-        text-decoration: underline;
-    }
-}
-</style>
+<style src="./style.less" lang="less" scoped />

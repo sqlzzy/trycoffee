@@ -1,0 +1,53 @@
+.card-coffee {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: 0 2px 18px -14px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    margin-right: 12px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    justify-content: space-between;
+    max-width: 235px;
+    width: 100%;
+    color: inherit;
+    &:hover {
+        box-shadow: 0px 0px 20px 10px rgb(0 0 0 / 20%);
+    }
+    &__title {
+        font-weight: bold;
+        margin: 0 0 18px;
+    }
+    &__info-items {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
+    &__info-item {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+        max-width: 90px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+    &__icon {
+        position: relative;
+        bottom: 2px;
+        margin-right: 6px;
+        &_type_weight {
+            margin-right: 3px;
+        }
+    }
+    &__author {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    &__icon-author {
+        width: 25px;
+        height: 25px;
+        margin-right: 4px;
+        margin-left: 6px;
+    }
+}

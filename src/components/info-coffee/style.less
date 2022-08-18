@@ -1,0 +1,54 @@
+.info-coffee {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    width: calc(100% - 25px);
+    color: inherit;
+
+    &__title {
+        font-weight: bold;
+        margin: 0 0 18px;
+    }
+
+    &__info-items {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
+
+    &__info-item {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+        max-width: 90px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    &__icon {
+        position: relative;
+        bottom: 2px;
+        margin-right: 6px;
+
+        &_type_weight {
+            margin-right: 3px;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    &__icon-author {
+        width: 25px;
+        height: 25px;
+        margin-right: 4px;
+        margin-left: 6px;
+    }
+}

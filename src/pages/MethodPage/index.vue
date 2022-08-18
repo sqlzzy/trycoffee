@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import HeaderPage from '@/components/HeaderPage.vue';
-import CardCoffee from '@/components/CardCoffee.vue';
-import FooterPage from '@/components/FooterPage.vue';
+import HeaderPage from '@/components/header-page/HeaderPage.vue';
+import CardCoffee from '@/components/card-coffee/CardCoffee.vue';
+import FooterPage from '@/components/footer-page/FooterPage.vue';
 
 export default {
   name: 'MethodPage',

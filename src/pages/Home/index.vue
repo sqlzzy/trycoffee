@@ -36,9 +36,9 @@
 </template>
 
 <script>
-import CardCoffee from '@/components/CardCoffee.vue';
-import HeaderPage from '@/components/HeaderPage.vue';
-import FooterPage from '@/components/FooterPage.vue';
+import CardCoffee from '@/components/card-coffee/CardCoffee.vue';
+import HeaderPage from '@/components/header-page/HeaderPage.vue';
+import FooterPage from '@/components/footer-page/FooterPage.vue';
 
 export default {
   name: 'HomePage',
