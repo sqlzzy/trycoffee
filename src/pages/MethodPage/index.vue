@@ -54,7 +54,7 @@ export default {
     },
 
     currentMethod() {
-      return this.apisMethods.filter((method) => { return method.name === this.$route.params.methodName } );
+      return this.apisMethods.filter(method => method.name === this.$route.params.methodName);
     }
   }
 }
