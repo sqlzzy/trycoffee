@@ -1,6 +1,5 @@
 <template>
   <header-page :link="true"/>
-
   <main class="content">
     <div class="methods" >
         <div
@@ -60,18 +59,4 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
-.method {
-    &__title {
-        font-size: x-large;
-        font-weight: bold;
-        margin: 12px 0 6px;
-    }
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-}
-</style>
-
+<style src="./style.less" lang="less" scoped />
