@@ -53,13 +53,8 @@ export default {
     },
 
     currentCard() {
-      let currentCard;
-      
-      this.apisMethods.forEach((method) => {
-        if (method.name === this.$route.params.methodName) {
-          currentCard = method.cards[this.$route.params.idCoffee];
-        }
-      });
+      const currentMethod = this.apisMethods.filter(method => method.name === this.$route.params.methodName );
+      const currentCard = currentMethod[0].cards[this.$route.params.idCoffee]
 
       return currentCard;
     }
