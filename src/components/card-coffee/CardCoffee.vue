@@ -3,23 +3,23 @@
         <p class="card-coffee__title">{{ title }}</p>
         <div class="card-coffee__info-items">
             <span v-if="time" class="card-coffee__info-item card-coffee__info-item_type_time">
-                <img src="../../assets/info-icons/icon-time.svg" alt="icon-time" class="card-coffee__icon card-coffee__icon_type_time">
+                <img src="../../assets/info-icons/icon-time.svg" alt="icon-time" loading="lazy" class="card-coffee__icon card-coffee__icon_type_time">
                 {{ time }}
             </span>
             <span v-if="temperature" class="card-coffee__info-item card-coffee__info-item_type_temp">
-                <img src="../../assets/info-icons/icon-temp.svg" alt="icon-temp" class="card-coffee__icon card-coffee__icon_type_temp">
+                <img src="../../assets/info-icons/icon-temp.svg" alt="icon-temp" loading="lazy" class="card-coffee__icon card-coffee__icon_type_temp">
                 {{ temperature }} °C
             </span>
             <span v-if="weight" class="card-coffee__info-item card-coffee__info-item_type_weight">
-                <img src="../../assets/info-icons/icon-weight.svg" alt="icon-weight" class="card-coffee__icon card-coffee__icon_type_weight">
+                <img src="../../assets/info-icons/icon-weight.svg" alt="icon-weight" loading="lazy" class="card-coffee__icon card-coffee__icon_type_weight">
                 {{ weight }} г.
             </span>
             <span v-if="capacity" class="card-coffee__info-item card-coffee__info-item_type_capacity">
-                <img src="../../assets/info-icons/icon-capacity.svg" alt="icon-capacity" class="card-coffee__icon card-coffee__icon_type_capacity">
+                <img src="../../assets/info-icons/icon-capacity.svg" alt="icon-capacity" loading="lazy" class="card-coffee__icon card-coffee__icon_type_capacity">
                 {{ capacity }} мл
             </span>
             <span v-if="ice" class="card-coffee__info-item card-coffee__info-item_type_ice">
-                <img src="../../assets/info-icons/icon-ice.svg" alt="icon-ice" class="card-coffee__icon card-coffee__icon_type_ice">
+                <img src="../../assets/info-icons/icon-ice.svg" alt="icon-ice" loading="lazy" class="card-coffee__icon card-coffee__icon_type_ice">
                 {{ ice }} г.
             </span>
         </div>
