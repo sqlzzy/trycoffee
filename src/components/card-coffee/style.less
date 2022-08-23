@@ -1,36 +1,60 @@
+@import '../../assets/mixins/mixins.less';
+
 .card-coffee {
     display: flex;
     flex-direction: column;
+    flex: 1 0 calc(100% / 3);
     padding: 25px;
     box-shadow: 0 2px 18px -14px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%);
     border-radius: 15px;
-    margin-right: 12px;
-    margin-bottom: 6px;
     text-decoration: none;
     justify-content: space-between;
-    max-width: 235px;
     width: 100%;
+    min-width: 234px;
     color: inherit;
+
+    &:nth-child(2n-1) {
+        .desktop({
+            margin-right: 12px;
+        });
+    }
+
+    .desktop({
+        flex: 0 0 calc((960px - 112px) / 2);
+        margin-bottom: 6px;
+    });
+
     &:hover {
         box-shadow: 0px 0px 20px 10px rgb(0 0 0 / 20%);
     }
+
     &__title {
         font-weight: bold;
         margin: 0 0 18px;
     }
+
     &__info-items {
         display: inline-flex;
         flex-wrap: wrap;
+        width: calc(100% - 42px);
         margin-bottom: 12px;
     }
+
     &__info-item {
         display: flex;
         align-items: center;
-        margin-right: 12px;
+        margin-right: 18px;
         max-width: 90px;
-        width: 100%;
+        min-width: 58px;
         margin-bottom: 6px;
+
+        &:last-child {
+            .desktop({
+                margin-right: 0;
+            });
+        }
     }
+
     &__icon {
         position: relative;
         bottom: 2px;
@@ -64,11 +88,13 @@
             }
         }
     }
+
     &__author {
         display: flex;
         align-items: center;
         margin: 0;
     }
+
     &__icon-author {
         width: 25px;
         height: 25px;
