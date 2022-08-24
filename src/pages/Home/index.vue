@@ -1,8 +1,8 @@
 <template>
   <header-page/>
   <main class="content">
-    <div class="methods">
-        <div
+    <article class="methods">
+        <section
             class="method"
             v-for="method in apisMethods"
             :key="method"
@@ -28,8 +28,8 @@
                     :existIcon="card.exist_icon"
                 />
             </div>
-        </div>
-    </div>
+        </section>
+    </article>
   </main>
   <footer-page />
 </template>

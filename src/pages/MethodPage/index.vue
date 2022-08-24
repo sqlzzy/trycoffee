@@ -1,8 +1,8 @@
 <template>
   <header-page :link="true"/>
   <main class="content">
-    <div class="methods" >
-        <div
+    <article class="methods" >
+        <section
             class="method"
             v-for="method in currentMethod"
             :key="method"
@@ -26,8 +26,8 @@
                     :existIcon="card.exist_icon"
                 />
             </div>
-        </div>
-    </div>
+        </section>
+    </article>
   </main>
 
   <footer-page />
