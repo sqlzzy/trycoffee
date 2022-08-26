@@ -2,6 +2,7 @@
   <header-page/>
   <menu-page
     :methods="apisMethods"
+    :isIdLinkMethod="true"
   />
   <main class="content">
     <article class="methods">
@@ -10,7 +11,11 @@
             v-for="method in apisMethods"
             :key="method"
         >
-            <a :href="`/method/${method.name}`" class="method__link">
+            <a
+              :href="`/method/${method.name}`"
+              class="method__link"
+              :id="method.name"
+            >
               <h2 class="method__title">{{ method.name_ru }}</h2>
             </a>
 

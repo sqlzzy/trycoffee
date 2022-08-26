@@ -4,7 +4,7 @@
             <a
                 v-for="(key, value) in objectMenuItems"
                 :key="value"
-                :href="[ isHomeMenuItem( value ) ? '/' : `/method/${value}` ]"
+                :href="urlOrIdlinkMenuItem( value )"
                 class="menu__item"
                 :name-menu-item="value"
             >
@@ -12,7 +12,6 @@
             </a>
         </div>   
     </nav>
-    
 </template>
 
 <script>
@@ -20,7 +19,22 @@ export default {
   name: 'MenuPage',
 
   props: {
-    methods : Array
+    methods : Array,
+    isIdLinkMethod : Boolean,
+  },
+
+  methods: {
+    linkMenuItem( nameMenuItem ) {
+        let urlMenuItem = nameMenuItem === 'home' ? '/' : `/method/${nameMenuItem}`;
+        return urlMenuItem;
+    },
+
+    urlOrIdlinkMenuItem( nameMenuItem ) {
+        console.log(nameMenuItem, 'urlOrIdlinkMenuItem')
+        let structureLinkMenuItem = this.isIdLinkMethod ? `#${nameMenuItem}` : this.linkMenuItem( nameMenuItem );
+        console.log(structureLinkMenuItem, 'structureLinkMenuItem')
+        return structureLinkMenuItem;
+    }
   },
   
   computed: {
@@ -35,10 +49,6 @@ export default {
 
         return objectMenuItems;
     },
-
-    isHomeMenuItem( nameMenuItem ) {
-        return nameMenuItem === 'home';
-    }
   }
 }
 </script>
