@@ -30,9 +30,7 @@ export default {
     },
 
     urlOrIdlinkMenuItem( nameMenuItem ) {
-        console.log(nameMenuItem, 'urlOrIdlinkMenuItem')
         let structureLinkMenuItem = this.isIdLinkMethod ? `#${nameMenuItem}` : this.linkMenuItem( nameMenuItem );
-        console.log(structureLinkMenuItem, 'structureLinkMenuItem')
         return structureLinkMenuItem;
     }
   },
