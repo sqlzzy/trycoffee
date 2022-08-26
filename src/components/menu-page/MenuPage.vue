@@ -41,7 +41,9 @@ export default {
     objectMenuItems() {
         const objectMenuItems = {};
 
-        objectMenuItems['home'] = 'Главная';
+        if(document.location.pathname !== '/') {
+            objectMenuItems['home'] = 'Главная';
+        }
 
         this.methods.forEach( method => {
             objectMenuItems[method.name] = method.name_ru;
