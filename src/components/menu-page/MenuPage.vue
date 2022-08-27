@@ -6,7 +6,7 @@
                 :key="value"
                 :href="urlOrIdlinkMenuItem( value )"
                 class="menu__item"
-                :name-menu-item="value"
+                :class="{ 'menu__item_type_active' : makeActiveMenuItem( value ) }"
             >
                 {{ key }}
             </a>
@@ -32,6 +32,16 @@ export default {
     urlOrIdlinkMenuItem( nameMenuItem ) {
         let structureLinkMenuItem = this.isIdLinkMethod ? `#${nameMenuItem}` : this.linkMenuItem( nameMenuItem );
         return structureLinkMenuItem;
+    },
+
+    makeActiveMenuItem(nameMenuItem) {
+        const currentPathname = document.location.pathname;
+
+        if (currentPathname === `/method/${nameMenuItem}`) {
+            const currentNameMenuItem = currentPathname.match(/(?<=\/method\/).+/gi)[0];
+
+            return currentNameMenuItem === nameMenuItem;
+        }
     }
   },
   
