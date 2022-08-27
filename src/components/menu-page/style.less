@@ -1,0 +1,42 @@
+@import '../../assets/mixins/mixins.less';
+
+.menu {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 10%);
+
+    &__container {
+        display: flex;
+        overflow: scroll;
+
+        .tablet({
+            justify-content: center;
+            overflow: hidden;
+        });
+
+        .desktop({
+            justify-content: center;
+            overflow: hidden;
+        });
+    }
+
+    &__item {
+        font-size: large;
+        font-weight: 600;
+        font-family: monospace;
+        white-space: nowrap;
+        letter-spacing: 2px;
+        padding: 6px 12px;
+
+        &:hover {
+            box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
+            border-radius: 6px;
+        }
+
+        &_type_active {
+            opacity: 0.5;
+            pointer-events: none;
+            box-shadow: none;
+        }
+    }
+}

@@ -1,5 +1,9 @@
 <template>
   <header-page/>
+  <menu-page
+    :methods="apisMethods"
+    :isIdLinkMethod="true"
+  />
   <main class="content">
     <article class="methods">
         <section
@@ -7,7 +11,11 @@
             v-for="method in apisMethods"
             :key="method"
         >
-            <a :href="`/method/${method.name}`" class="method__link">
+            <a
+              :href="`/method/${method.name}`"
+              class="method__link"
+              :id="method.name"
+            >
               <h2 class="method__title">{{ method.name_ru }}</h2>
             </a>
 
@@ -38,6 +46,7 @@
 import CardCoffee from '@/components/card-coffee/CardCoffee.vue';
 import HeaderPage from '@/components/header-page/HeaderPage.vue';
 import FooterPage from '@/components/footer-page/FooterPage.vue';
+import MenuPage from '@/components/menu-page/MenuPage.vue';
 
 export default {
   name: 'HomePage',
@@ -45,6 +54,7 @@ export default {
     CardCoffee,
     HeaderPage,
     FooterPage,
+    MenuPage,
   },
 
   computed: {

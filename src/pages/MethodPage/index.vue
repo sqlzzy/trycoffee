@@ -1,5 +1,8 @@
 <template>
   <header-page :link="true"/>
+  <menu-page
+    :methods="apisMethods"
+  />
   <main class="content">
     <article class="methods" >
         <section
@@ -37,6 +40,7 @@
 import HeaderPage from '@/components/header-page/HeaderPage.vue';
 import CardCoffee from '@/components/card-coffee/CardCoffee.vue';
 import FooterPage from '@/components/footer-page/FooterPage.vue';
+import MenuPage from '@/components/menu-page/MenuPage.vue';
 
 export default {
   name: 'MethodPage',
@@ -44,6 +48,7 @@ export default {
     HeaderPage,
     CardCoffee,
     FooterPage,
+    MenuPage,
   },
 
   computed: {
