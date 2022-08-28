@@ -13,7 +13,7 @@ export default {
   data: function () {
     const isMainPage = window.location.pathname === '/';
     return {
-      hasLink: isMainPage,
+      hasLink: !isMainPage,
     }
   }
 }
