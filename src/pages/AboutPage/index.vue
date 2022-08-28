@@ -1,5 +1,5 @@
 <template>
-    <header-page :link="true"/>
+    <header-page />
     <main class="content">
         hello
     </main>

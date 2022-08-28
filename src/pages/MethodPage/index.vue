@@ -1,5 +1,5 @@
 <template>
-  <header-page :link="true"/>
+  <header-page />
   <menu-page
     :methods="apisMethods"
   />
@@ -13,7 +13,7 @@
             <h2 class="method__title">{{ method.name_ru }}</h2>
 
             <div class="cards">
-                <card-coffee 
+                <card-coffee
                     v-for="(card, index) in method.cards"
                     :key="card"
                     :title="card.title"

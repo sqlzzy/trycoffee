@@ -1,10 +1,10 @@
 <template>
-  <header-page :link="true"/>
+  <header-page />
   <menu-page
     :methods="apisMethods"
   />
   <main class="content">
-    <info-coffee 
+    <info-coffee
       :title="currentCard.title"
       :author="currentCard.author"
       :time="currentCard.time"
