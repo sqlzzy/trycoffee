@@ -1,8 +1,5 @@
 <template>
   <header-page />
-  <menu-page
-    :methods="apisMethods"
-  />
   <main class="content">
     <info-coffee
       :title="currentCard.title"
@@ -38,7 +35,6 @@ import InfoCoffee from '@/components/info-coffee/InfoCoffee.vue';
 import FooterPage from '@/components/footer-page/FooterPage.vue';
 import RecipeCoffee from '@/components/recipe-coffee/RecipeCoffee.vue';
 import NoteCoffee from '@/components/note-coffee/NoteCoffee.vue';
-import MenuPage from '@/components/menu-page/MenuPage.vue';
 
 export default {
   name: 'CardPage',
@@ -48,7 +44,6 @@ export default {
     RecipeCoffee,
     FooterPage,
     NoteCoffee,
-    MenuPage,
   },
 
   computed: {
