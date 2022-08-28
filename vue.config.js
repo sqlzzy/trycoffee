@@ -44,6 +44,19 @@ module.exports = defineConfig({
           : '/',
       chunks: [ 'chunk-vendors', 'chunk-common', 'method' ],
       minify: true
-    }
+    },
+      'about': {
+          entry: './src/pages/AboutPage/index.js',
+          template: './src/pages/AboutPage/index.html',
+          title: 'О проекте Try Coffee',
+          meta: {
+              description: 'О проекте Try Coffee'
+          },
+          base: process.env.NODE_ENV === 'production'
+              ? 'https://www.trycoffee.info/'
+              : '/',
+          chunks: [ 'chunk-vendors', 'chunk-common', 'about' ],
+          minify: true
+      }
   },
 });
