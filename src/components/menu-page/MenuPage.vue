@@ -36,12 +36,15 @@ export default {
 
     makeActiveMenuItem(nameMenuItem) {
         const currentPathname = document.location.pathname;
+        let currentNameMenuItem;
 
         if (currentPathname === `/method/${nameMenuItem}`) {
-            const currentNameMenuItem = currentPathname.match(/(?<=\/method\/).+/gi)[0];
-
-            return currentNameMenuItem === nameMenuItem;
+            currentNameMenuItem = currentPathname.match(/(?<=\/method\/).+/gi)[0];
+        } else if (currentPathname === `/`) {
+            currentNameMenuItem = 'home';
         }
+
+        return currentNameMenuItem === nameMenuItem;
     }
   },
   
@@ -49,9 +52,7 @@ export default {
     objectMenuItems() {
         const objectMenuItems = {};
 
-        if(document.location.pathname !== '/') {
-            objectMenuItems['home'] = 'Главная';
-        }
+        objectMenuItems['home'] = 'Главная';
 
         this.methods.forEach( method => {
             objectMenuItems[method.name] = method.name_ru;
